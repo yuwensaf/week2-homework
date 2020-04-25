@@ -57,17 +57,18 @@ table {
           box-sizing: border-box;
 }
 
+html, body {
+  font-family: Roboto, sans-serif;
+}
+
 .text-sm {
   color: #FFFFFF;
-  font-family: Roboto, sans-serif;
   font-size: 20px;
   font-weight: 500;
-  font-style: italic;
   line-height: 42px;
 }
 
 .text-md {
-  font-family: Roboto, sans-serif;
   font-size: 24px;
   font-weight: 700;
   font-style: italic;
@@ -75,7 +76,6 @@ table {
 }
 
 .h2-title {
-  font-family: Roboto, sans-serif;
   font-size: 64px;
   font-weight: 500;
   font-style: italic;
@@ -86,9 +86,13 @@ table {
   padding-top: 64px;
 }
 
+.mb-32 {
+  margin-bottom: 32px;
+}
+
 .header {
   width: 100%;
-  height: 960px;
+  height: 100vh;
   background-image: url(../img/banner.png);
   background-position: center center;
   background-repeat: no-repeat;
@@ -109,12 +113,14 @@ table {
 }
 
 .header-content .header-title {
-  font-family: Roboto, sans-serif;
   font-size: 80px;
   font-weight: 900;
   font-style: italic;
   line-height: 94px;
-  margin-bottom: 32px;
+}
+
+.header-content p:nth-of-type(2) {
+  margin-bottom: 64px;
 }
 
 .header-content .icon {
@@ -135,9 +141,11 @@ table {
   text-align: center;
 }
 
+.about .about-title {
+  margin-bottom: 40px;
+}
+
 .about-photo {
-  width: 384px;
-  height: 384px;
   margin-bottom: 24px;
 }
 
@@ -153,6 +161,10 @@ table {
   left: 0;
   right: 0;
   bottom: -20px;
+}
+
+.about-content li:nth-of-type(3), .about-content li:nth-of-type(4) {
+  line-height: 36px;
 }
 
 .about-list {
@@ -189,14 +201,38 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 64px;
+  color: #FFFFFF;
+}
+
+.brand .brand-title {
+  margin-bottom: 16px;
+  color: #FFFFFF;
+}
+
+.brand .brand-subtitle {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 42px;
+  font-style: italic;
+}
+
+.brand p:nth-of-type(4) {
+  margin-bottom: 48px;
 }
 
 .brand .brand-photo {
+  width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 160px;
+}
+
+.brand img:nth-of-type(1) {
+  margin-bottom: 40px;
 }
 
 .works {
@@ -212,12 +248,31 @@ table {
           align-items: center;
 }
 
+.works .works-title {
+  margin-bottom: 24px;
+  color: #000000;
+}
+
+.works .works-text {
+  color: #000000;
+}
+
+.works p:nth-of-type(2) {
+  margin-bottom: 128px;
+}
+
 .works .works-bg {
   background-image: url(../img/works-bg.png);
   width: 100%;
   height: 1558px;
   background-position: center center;
   background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .works-list {
@@ -226,9 +281,11 @@ table {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1200px;
+  margin-top: -80px;
 }
 
 .works-list .works-list-item {
@@ -236,7 +293,7 @@ table {
 }
 
 .works-list .works-photo {
-  margin: 0 12px 16px 12px;
+  margin-bottom: 16px;
 }
 
 .works-list .works-text {
@@ -259,13 +316,22 @@ table {
           align-items: center;
 }
 
+.contact .contact-title {
+  margin-bottom: 16px;
+  color: #FFFFFF;
+}
+
 .contact .contact-text {
-  font-family: Roboto, sans-serif;
   font-size: 24px;
   font-weight: 500;
   font-style: italic;
   line-height: 36px;
   color: #FFFFFF;
   margin-bottom: 16px;
+}
+
+.contact .contact-link {
+  text-decoration: none;
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=all.css.map */
